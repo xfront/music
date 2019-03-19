@@ -1,11 +1,11 @@
 // Add your native dependencies here:
 
 android {
-  defaultConfig {  
+  defaultConfig {
     generatedDensities = []
-    applicationId = "org.nativescript.playvue"
+    applicationId = "com.github.xfront.music"
   }
-  aaptOptions {  
-    additionalParameters "--no-version-vectors"  
-  }  
-} 
+  aaptOptions {
+    additionalParameters "--no-version-vectors"
+  }
+}

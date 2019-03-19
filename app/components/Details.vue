@@ -17,8 +17,8 @@
 				<Label class="font-weight-bold" marginTop="10" paddingLeft="10" fontSize="20" color="#333333" text="Top Songs"></Label>
 				<ListView class="list-group" for="item in listViewData" :key="index" height="500" backgroundColor="#f8f8f8">
 					<v-template>
-						<GridLayout orientation="horizontal" class="list-group-item" rows="auto" columns="auto,*,auto">
-							<Image col="0" row="0" :src="item.imageUrl" height="75" width="75" @tap="onItemTap"></Image>
+						<GridLayout @tap="onItemTap" orientation="horizontal" class="list-group-item" rows="auto" columns="auto,*,auto">
+							<Image col="0" row="0" :src="item.imageUrl" height="75" width="75"></Image>
 							<StackLayout col="1" row="0" marginLeft="15">
 								<Label marginTop="5" paddingRight="5" :text="item.title" class="list-group-item-heading font-weight-bold" color="#333333"></Label>
 								<Label marginTop="5" :text="item.artist" color="#999999"></Label>
